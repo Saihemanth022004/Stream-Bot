@@ -129,11 +129,11 @@ async def help_cd(b, m):
     reply_markup=InlineKeyboardMarkup(
         [
             [   
-                InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🤡", url=Deendayal_dhakad)
+                InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🤡", url=bisal_channel)
             ],
             [
                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", url=f"https://www.google.com"),
-                InlineKeyboardButton("ᴏᴜʀ ɢʀᴏᴜᴘ 🚩", url=Deendayal_dhakad_Group),
+                InlineKeyboardButton("ᴏᴜʀ ɢʀᴏᴜᴘ 🚩", url=bisal_grp),
 
             ],
             [
