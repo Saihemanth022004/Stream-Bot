@@ -6,27 +6,27 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
-bot_name = "Bɪɪsᴀʟ Fɪʟᴇ2Lɪɴᴋ Bᴏᴛ"
-bisal_channel = "https://telegram.me/bisal_files"
-bisal_grp = "https://t.me/+PA8OPL2Zglk3MDM1"
+bot_name = "File to Link Bot"
+bisal_channel = "https://telegram.me/Deendayal_dhakad"
+bisal_grp = "https://t.me/BollyWood_Hollywood_South_Movie7"
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', ''))
-    API_HASH = str(getenv('API_HASH', ''))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
-    name = str(getenv('name', 'bisal_file2link_bot'))
+    API_ID = int(getenv('API_ID', '16681004'))
+    API_HASH = str(getenv('API_HASH', '161b61f5a06dd299a3d88a3384b9f104'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '6881178610:AAECZjGP6SETmxlz4xblU2F8S4CbQGDKH3A'))
+    name = str(getenv('name', 'File_to_Link_2024_Bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))
-    NEW_USER_LOG = int(getenv('NEW_USER_LOG', ''))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002022120998'))
+    NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1002022120998'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "YOUR ID").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'biisal'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'Sorry_Sorry_Galti_Ho_Gai'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME')) #dont need to fill anything here
