@@ -40,7 +40,7 @@ class Var(object):
     else:
         URL = "https://stream-bot-t7d8.onrender.com/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://venomdarshu0:darshu567@cluster0.mwgkkci.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', '
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', "-100158662241")
     vdmoviez')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "")).split()))   
