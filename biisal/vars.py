@@ -12,10 +12,10 @@ bisal_grp = "https://t.me/BollyWood_Hollywood_South_Movie7"
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', '16681004'))
-    API_HASH = str(getenv('API_HASH', '161b61f5a06dd299a3d88a3384b9f104'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , '6881178610:AAECZjGP6SETmxlz4xblU2F8S4CbQGDKH3A'))
-    name = str(getenv('name', 'File_to_Link_2024_Bot'))
+    API_ID = int(getenv('API_ID', ''))
+    API_HASH = str(getenv('API_HASH', ''))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
+    name = str(getenv('name', ''))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002022120998'))
