@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 bot_name = "File to Link Bot"
-bisal_channel = "https://telegram.me/Deendayal_dhakad"
-bisal_grp = "https://t.me/BollyWood_Hollywood_South_Movie7"
+bisal_channel = "https://telegram.me/venom_darshu"
+bisal_grp = "https://t.me/vdmoviez"
 
 class Var(object):
     MULTI_CLIENT = False
