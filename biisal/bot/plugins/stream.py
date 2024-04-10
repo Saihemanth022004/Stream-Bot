@@ -21,15 +21,15 @@ MY_PASS = os.environ.get("MY_PASS", None)
 pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
-msg_text ="""<b>‣ 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖽 ! 😎
+msg_text ="""<b>‣ 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖽 ! 🎊
 
 ○ 𝖥𝗂𝗅𝖾 𝗇𝖺𝗆𝖾 : <i>{}</i>
 ○ 𝖥𝗂𝗅𝖾 𝗌𝗂𝗓𝖾 : {}
 
-🔻 <a href="{}">𝗙𝗔𝗦𝗧 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗</a>
-🔺 <a href="{}">𝗪𝗔𝗧𝗖𝗛 𝗢𝗡𝗟𝗜𝗡𝗘</a>
+○ <a href="{}">𝗙𝗔𝗦𝗧 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗</a>
+○ <a href="{}">𝗪𝗔𝗧𝗖𝗛 𝗢𝗡𝗟𝗜𝗡𝗘</a>
 
-○ 𝖦𝖾𝗍 <a href="https://t.me/vdmoviez">𝗆𝗈𝗋𝖾 𝖿𝗂𝗅𝖾𝗌</a></b> 🤡"""
+○ 𝖦𝖾𝗍 <a href="https://t.me/vdmoviez">𝗆𝗈𝗋𝖾 𝖿𝗂𝗅𝖾𝗌</a></b> ☃️"""
 
 
 
@@ -60,7 +60,7 @@ async def private_receive_handler(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("𝗃𝗈𝗂𝗇 𝗇𝗈𝗐 🚩", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("❤️‍🔥 𝗃𝗈𝗂𝗇 𝗇𝗈𝗐 ❤️‍🔥", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -85,8 +85,8 @@ async def private_receive_handler(c: Client, m: Message):
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝗌𝗍𝗋𝖾𝖺𝗆 🤍", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 🤍', url=online_link)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("☃️𝗌𝗍𝗋𝖾𝖺𝗆", url=stream_link), #Stream Link
+                                                InlineKeyboardButton('𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽☃️', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
