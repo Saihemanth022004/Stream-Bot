@@ -198,11 +198,11 @@ async def cb_handler(client, query):
     elif data == "aboutDev":
         # please don't steal credit
         await query.message.edit_caption(
-            caption=f"<b>𝖭𝖺𝗆𝗌𝗄𝖺𝗋𝖺 𝗀𝗎𝗋𝗎...\n𝗂𝗆 <a href='https://t.me/vdmoviez'>𝖣𝖠𝖲</a>\n𝗂 𝖺𝗆 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇 𝗈𝖿 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍..𝖺𝗇𝖽 𝗂 𝗆𝖺𝖽𝖾 𝖻𝗈𝗍 𝖻𝗒 𝗍𝗁𝖾 𝗁𝖾𝗅𝗉 𝗈𝖿 <a href='https://t.me/vdmoviez'>𝘯𝘰𝘣𝘰𝘥𝘺</a> 𝖻𝗋𝗈..\n\n𝖦𝗂𝗍𝗁𝗎𝖻 : <a href='https://t.me/venom_darshu'>𝗏𝖾𝗇𝗈𝗆$</a></b>",
+            caption=f"<b>𝖭𝖺𝗆𝗌𝗄𝖺𝗋𝖺 𝗀𝗎𝗋𝗎...😍\n𝗂𝗆 <a href='https://t.me/vdmoviez'>𝖣𝖠𝖲✨</a>\n𝗂 𝖺𝗆 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇 𝗈𝖿 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍..𝖺𝗇𝖽 𝗂 𝗆𝖺𝖽𝖾 𝖻𝗈𝗍 𝖻𝗒 𝗍𝗁𝖾 𝗁𝖾𝗅𝗉 𝗈𝖿 <a href='https://t.me/vdmoviez'>𝘯𝘰𝘣𝘰𝘥𝘺</a> 𝖻𝗋𝗈..\n\n𝖦𝗂𝗍𝗁𝗎𝖻 : <a href='https://t.me/venom_darshu'>𝗏𝖾𝗇𝗈𝗆$😈</a></b>",
             reply_markup=InlineKeyboardMarkup(
                 [[ 
-                     InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start"),
-                     InlineKeyboardButton("ᴄʟᴏsᴇ ‼️", user_id=int(5658395021)
+                     InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
+                     InlineKeyboardButton("𝖼𝗅𝗈𝗌𝖾 ‼️", callback_data="close_data")
                   ]]            )
         )
     elif data.startswith("sendAlert"):
