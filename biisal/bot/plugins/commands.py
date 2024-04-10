@@ -202,7 +202,7 @@ async def cb_handler(client, query):
             reply_markup=InlineKeyboardMarkup(
                 [[ 
                      InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start"),
-                     InlineKeyboardButton("ᴄʟᴏsᴇ ‼️", callback_data="close_data")
+                     InlineKeyboardButton("ᴄʟᴏsᴇ ‼️", user_id=int(5658395021)
                   ]]            )
         )
     elif data.startswith("sendAlert"):
