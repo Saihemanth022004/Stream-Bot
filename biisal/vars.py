@@ -36,9 +36,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', 'BIND_ADRESS:PORT')) if not ON_HEROKU or getenv('FQDN', '') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',True))
     if HAS_SSL:
-        URL = "https://stream-bot-t7d8.onrender.com/".format(FQDN)
+        URL = "https://stream-bot-o2j5.onrender.com/".format(FQDN)
     else:
-        URL = "https://stream-bot-t7d8.onrender.com/".format(FQDN)
+        URL = "https://stream-bot-o2j5.onrender.com/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://venomdarshu0:darshu567@cluster0.mwgkkci.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'vdmoviez')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
