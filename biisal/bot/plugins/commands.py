@@ -18,10 +18,10 @@ from biisal.vars import bot_name , bisal_channel , bisal_grp
 
 SRT_TXT = """<b>ನಮಸ್ಕಾರ ❤️{}!,
 
-𝖨 𝖺𝗆 𝖺 𝖥𝗂𝗅𝖾 𝗍𝗈 𝗅𝗂𝗇𝗄 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝗈𝗋 𝖻𝗈𝗍 𝗐𝗂𝗍𝗁 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗌𝗎𝗉𝗉𝗈𝗋𝗍.
+𝖨 𝖺𝗆 𝖺 𝖥𝗂𝗅𝖾 𝗍𝗈 𝗅𝗂𝗇𝗄 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝗈𝗋 𝖻𝗈𝗍 𝗐𝗂𝗍𝗁 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗌𝗎𝗉𝗉𝗈𝗋𝗍 🎊
 
 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺𝗇𝗒 𝖿𝗂𝗅𝖾 𝖺𝗇𝖽 𝗀𝖾𝗍 𝖽𝗂𝗋𝖾𝖼𝗍 𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝗅𝗂𝗇𝗄 𝖺𝗇𝖽 𝗌𝗍𝗋𝖾𝖺𝗆𝖺𝖻𝗅𝖾 𝗅𝗂𝗇𝗄𝗌.!
-𝖬𝖺𝗂𝗇𝗍𝖺𝗂𝗇𝖾𝖽 𝖻𝗒 : <a href='https://t.me/vdmoviez'>𝖣𝖱𝖭𝗑𝖪𝖠𝖭❤️‍🔥</a></b>"""
+💥 𝖬𝖺𝗂𝗇𝗍𝖺𝗂𝗇𝖾𝖽 𝖻𝗒 : <a href='https://t.me/vdmoviez'>𝖣𝖱𝖭𝗑𝖪𝖠𝖭❤️‍🔥</a></b>"""
 
 @StreamBot.on_message(filters.command("start") & filters.private )
 async def start(b, m):
@@ -160,12 +160,12 @@ async def cb_handler(client, query):
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
                 [
-            [InlineKeyboardButton("❤️‍🔥 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 ❤️‍🔥", url=Deendayal_dhakad)],
+            [InlineKeyboardButton("❤️‍🔥 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 ❤️‍🔥", url=bisal_channel)],
             [
                  InlineKeyboardButton("𝖺𝖻𝗈𝗎𝗍 🧩", callback_data="about"),
                  InlineKeyboardButton("𝗁𝖾𝗅𝗉 ✨", callback_data="help")
             ],
-            [InlineKeyboardButton("🎊 𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 🎊", url=Deendayal_dhakad_Group)],
+            [InlineKeyboardButton("🎊 𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 🎊", url=bisal_grp)],
 
             [
                  InlineKeyboardButton("❄️ 𝖽𝗂𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋 ❄️", url=f"https://telegra.ph/Disclaimer-11-07-37"),
