@@ -11,7 +11,7 @@ bisal_channel = "https://telegram.me/venom_darshu"
 bisal_grp = "https://t.me/vdmoviez"
 
 class Var(object):
-    MULTI_CLIENT = False
+    MULTI_CLIENT = True
     API_ID = int(getenv('API_ID', '20738979'))
     API_HASH = str(getenv('API_HASH', 'a6d015153068a35390a336fe0a38dd64'))
     BOT_TOKEN = str(getenv('BOT_TOKEN' , '6683650338:AAEkBqC01ihqCSwpqO_8ZvHsB7QEGzB6fig'))
@@ -39,7 +39,7 @@ class Var(object):
         URL = "https://stream-bot-o2j5.onrender.com/".format(FQDN)
     else:
         URL = "https://stream-bot-o2j5.onrender.com/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://venomdarshu0:darshu567@cluster0.mwgkkci.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://venomdas:darshu567@cluster0.mwgkkci.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'vdmoviez')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "")).split()))   
