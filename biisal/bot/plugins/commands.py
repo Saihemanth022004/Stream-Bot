@@ -17,6 +17,7 @@ from biisal.vars import bot_name , bisal_channel , bisal_grp
 
 
 SRT_TXT = """<b>ನಮಸ್ಕಾರ ❤️{}!,
+
 𝖨 𝖺𝗆 𝖺 𝖥𝗂𝗅𝖾 𝗍𝗈 𝗅𝗂𝗇𝗄 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝗈𝗋 𝖻𝗈𝗍 𝗐𝗂𝗍𝗁 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗌𝗎𝗉𝗉𝗈𝗋𝗍.
 
 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺𝗇𝗒 𝖿𝗂𝗅𝖾 𝖺𝗇𝖽 𝗀𝖾𝗍 𝖽𝗂𝗋𝖾𝖼𝗍 𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝗅𝗂𝗇𝗄 𝖺𝗇𝖽 𝗌𝗍𝗋𝖾𝖺𝗆𝖺𝖻𝗅𝖾 𝗅𝗂𝗇𝗄𝗌.!
@@ -48,7 +49,7 @@ async def start(b, m):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("𝖩𝗈𝗂𝗇 𝗇𝗈𝗐 🚩", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("❤️‍🔥 𝖩𝗈𝗂𝗇 𝗇𝗈𝗐 ❤️‍🔥", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -68,16 +69,16 @@ async def start(b, m):
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("𝗎𝗈𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 🤡", url=bisal_channel)],
+            [InlineKeyboardButton("⚡ 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 ⚡", url=bisal_channel)],
             [
-                 InlineKeyboardButton("𝖺𝖻𝗈𝗎𝗍 😎", callback_data="about"),
-                 InlineKeyboardButton("𝗁𝖾𝗅𝗉 😅", callback_data="help")
+                 InlineKeyboardButton("𝖺𝖻𝗈𝗎𝗍 🧩", callback_data="about"),
+                 InlineKeyboardButton("𝗁𝖾𝗅𝗉 ✨", callback_data="help")
             ],
-            [InlineKeyboardButton("𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 🚩", url=bisal_grp)],
+            [InlineKeyboardButton("🎊 𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 🎊", url=bisal_grp)],
 
             [
-                 InlineKeyboardButton("𝖽𝗂𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋 🔻", url=f"https://www.google.com"),
-                 InlineKeyboardButton("𝖽𝖾𝗏 😊", callback_data="aboutDev")
+                 InlineKeyboardButton("❄️ 𝖽𝗂𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋 ❄️", url=f"https://www.google.com"),
+                 InlineKeyboardButton("🔥 𝖽𝖾𝗏 🔥", callback_data="aboutDev")
             ]
         ]
     )
@@ -108,7 +109,7 @@ async def help_cd(b, m):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("𝖩𝗈𝗂𝗇 𝗇𝗈𝗐 🚩", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("❤️‍🔥 𝖩𝗈𝗂𝗇 𝗇𝗈𝗐 ❤️‍🔥", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -129,15 +130,15 @@ async def help_cd(b, m):
     reply_markup=InlineKeyboardMarkup(
         [
             [   
-                InlineKeyboardButton("𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 🤡", url=bisal_channel)
+                InlineKeyboardButton("⚡ 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 ⚡", url=bisal_channel)
             ],
             [
-                InlineKeyboardButton("𝖽𝗂𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋 🔻", url=f"https://www.google.com"),
-                InlineKeyboardButton("𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗈𝗁 🚩", url=bisal_grp),
+                InlineKeyboardButton("❄️ 𝖽𝗂𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋 ❄️", url=f"https://www.google.com"),
+                InlineKeyboardButton("🎊 𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 🎊", url=bisal_grp),
 
             ],
             [
-                InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
+                InlineKeyboardButton("🐬 𝗁𝗈𝗆𝖾 🐬", callback_data="start"),
 
             ]
 
@@ -159,16 +160,16 @@ async def cb_handler(client, query):
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
                 [
-            [InlineKeyboardButton("𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 🤡", url=Deendayal_dhakad)],
+            [InlineKeyboardButton("❤️‍🔥 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 ❤️‍🔥", url=Deendayal_dhakad)],
             [
-                 InlineKeyboardButton("𝖺𝖻𝗈𝗎𝗍 😎", callback_data="about"),
-                 InlineKeyboardButton("𝗁𝖾𝗅𝗉 😅", callback_data="help")
+                 InlineKeyboardButton("𝖺𝖻𝗈𝗎𝗍 🧩", callback_data="about"),
+                 InlineKeyboardButton("𝗁𝖾𝗅𝗉 ✨", callback_data="help")
             ],
-            [InlineKeyboardButton("𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗎𝗎 🚩", url=Deendayal_dhakad_Group)],
+            [InlineKeyboardButton("🎊 𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 🎊", url=Deendayal_dhakad_Group)],
 
             [
-                 InlineKeyboardButton("𝖽𝗂𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋 🔻", url=f"https://telegra.ph/Disclaimer-11-07-37"),
-                 InlineKeyboardButton("𝖽𝖾𝗏 😊", callback_data="aboutDev")
+                 InlineKeyboardButton("❄️ 𝖽𝗂𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋 ❄️", url=f"https://telegra.ph/Disclaimer-11-07-37"),
+                 InlineKeyboardButton("🔥 𝖽𝖾𝗏 🔥", callback_data="aboutDev")
             ]
         ]
             )
@@ -181,7 +182,7 @@ async def cb_handler(client, query):
             reply_markup=InlineKeyboardMarkup(
                 [[ 
                      InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
-                     InlineKeyboardButton("𝖼𝗅𝗈𝗌𝖽 ‼️", callback_data="close_data")
+                     InlineKeyboardButton("𝖼𝗅𝗈𝗌𝖾 ‼️", callback_data="close_data")
                   ]]
             )
         )
@@ -190,7 +191,7 @@ async def cb_handler(client, query):
         caption=f"<b>𝖶𝖾 𝖽𝗈𝗇𝗍 𝗇𝖾𝖾𝖽 𝗆𝖺𝗇𝗒 <a href='https://t.me/vdmoviez'>𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌</a> 𝗍𝗈 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 🤩.\n\n𝗃𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 <a href='https://t.me/vdmoviez'>𝗏𝗂𝖽𝖾𝗈 𝖿𝗂𝗅𝖾𝗌</a> 𝖺𝗇𝖽 𝗂 𝗐𝗂𝗅𝗅 𝗀𝗂𝗏𝖾 𝗒𝗈𝗎 <a href='https://t.me/vdmoviez'>𝖽𝗂𝗋𝖾𝖼𝗍 𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 & 𝗌𝗍𝗋𝖾𝖺𝗆𝖺𝖻𝗅𝖾</a> 𝗅𝗂𝗇𝗄.\n\n𝗈𝗋 𝗎 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗆𝖾 𝗂𝗇 <a href='https://t.me/vdmoviez'>𝗒𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅</a>..𝗃𝗎𝗌𝗍 𝖺𝖽𝖽 𝗆𝖾 𝖺𝗇𝖽 𝗆𝖺𝗄𝖾 𝖻𝗈𝗍..𝖺𝗇𝖽 𝗃𝗎𝗌𝗍 𝗌𝖾𝖾 𝗆𝖾 𝗆𝖺𝗀𝗂𝖼 😎</b>",
             reply_markup=InlineKeyboardMarkup(
 [[ 
-                     InlineKeyboardButton("𝗁𝗈𝗆𝗋", callback_data="start"),
+                     InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
                      InlineKeyboardButton("𝖼𝗅𝗈𝗌𝖾 ‼️", callback_data="close_data")
                   ]]            )
         )
