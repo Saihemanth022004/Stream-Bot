@@ -16,7 +16,7 @@ from pyrogram.types import ReplyKeyboardMarkup
 from biisal.vars import bot_name , bisal_channel , bisal_grp
 
 
-SRT_TXT = """<b>ನಮಸ್ಕಾರ ❤️{}!,
+SRT_TXT = """<b>ನಮಸ್ಕಾರ ❤️ {}!,
 
 𝖨 𝖺𝗆 𝖺 𝖥𝗂𝗅𝖾 𝗍𝗈 𝗅𝗂𝗇𝗄 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝗈𝗋 𝖻𝗈𝗍 𝗐𝗂𝗍𝗁 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗌𝗎𝗉𝗉𝗈𝗋𝗍 🎊
 
@@ -44,12 +44,12 @@ async def start(b, m):
         except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://graph.org/file/102d82ebf94ca6fd67dc0.jpg",
-                caption=""""<b>𝖧𝖾𝗒 𝗍𝗁𝖾𝗋𝖾!\n\𝖯𝗅𝖾𝖺𝗌𝖾 𝗃𝗈𝗂𝗇 𝗈𝗎𝗋 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾 ! 😊\n\n𝖣𝗎𝖾 𝗍𝗈 𝗌𝖾𝗋𝗏𝖾𝗋 𝗈𝗏𝖾𝗋𝗅𝗈𝖺𝖽, 𝗈𝗇𝗅𝗒 𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾𝗋𝗌 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 !</b>""",
+                photo="https://telegra.ph/file/5eb253f28ed7ed68cb4e6.png",
+                caption=""""<b>𝖧𝖾𝗒 𝗍𝗁𝖾𝗋𝖾!!\n\n𝖯𝗅𝖾𝖺𝗌𝖾 𝗃𝗈𝗂𝗇 𝗈𝗎𝗋 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾 ! 😊\n\n𝖣𝗎𝖾 𝗍𝗈 𝗌𝖾𝗋𝗏𝖾𝗋 𝗈𝗏𝖾𝗋𝗅𝗈𝖺𝖽, 𝗈𝗇𝗅𝗒 𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾𝗋𝗌 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 !</b>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("❤️‍🔥 𝖩𝗈𝗂𝗇 𝗇𝗈𝗐 ❤️‍🔥", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("❤️‍🔥 𝗃𝗈𝗂𝗇 𝗇𝗈𝗐 ❤️‍🔥", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -59,13 +59,13 @@ async def start(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<b>𝗌𝗈𝗆𝖾𝗍𝗁𝗂𝗇𝗀 𝗐𝖾𝗇𝗍 𝗐𝗋𝗈𝗇𝗀.𝗉𝗅𝖾𝖺𝗌𝖾 <a href='https://t.me/vdsamr'>𝖼𝗅𝗂𝖼𝗄 𝗁𝖾𝗋𝖾 𝖿𝗈𝗋 𝗌𝗎𝗉𝗉𝗈𝗋𝗍</a></b>",
-               
+                text="<b>sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ᴘʟᴇᴀsᴇ <a href='https://t.me/biisal_bot'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ sᴜᴘᴘᴏʀᴛ</a></b>",
+                
                 disable_web_page_preview=True)
             return
     await StreamBot.send_photo(
     chat_id=m.chat.id,
-    photo="https://graph.org/file/102d82ebf94ca6fd67dc0.jpg",
+    photo="https://telegra.ph/file/d813fe75a3ac675ef34b7.jpg",
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
         [
@@ -78,7 +78,7 @@ async def start(b, m):
 
             [
                  InlineKeyboardButton("❄️ 𝖽𝗂𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋 ❄️", url=f"https://www.google.com"),
-                 InlineKeyboardButton("🔥 𝖽𝖾𝗏 🔥", callback_data="aboutDev")
+                 InlineKeyboardButton("🔥𝖽𝖾𝗏 🔥", callback_data="aboutDev")
             ]
         ]
     )
@@ -104,12 +104,12 @@ async def help_cd(b, m):
         except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://graph.org/file/102d82ebf94ca6fd67dc0.jpg",
-                caption=""""<b>𝖧𝖾𝗒 𝗍𝗁𝖾𝗋𝖾!\n\n𝗉𝗅𝖾𝖺𝗌𝖾 𝗃𝗈𝗂𝗇 𝗈𝗎𝗋 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗍𝗈 𝗎𝗌𝗌 𝗆𝖾 ! 😊\n\n𝖣𝗎𝖾 𝗍𝗈 𝗌𝖾𝗋𝗏𝖾𝗋 𝗈𝗏𝖾𝗋𝗅𝗈𝖺𝖽, 𝗈𝗇𝗅𝗒 𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾𝗋𝗌 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 !</b>""",
+                photo="https://telegra.ph/file/5eb253f28ed7ed68cb4e6.png",
+                caption=""""<b>Hᴇʏ ᴛʜᴇʀᴇ!\n\nPʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ ! 😊\n\nDᴜᴇ ᴛᴏ sᴇʀᴠᴇʀ ᴏᴠᴇʀʟᴏᴀᴅ, ᴏɴʟʏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜɪs ʙᴏᴛ !</b>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("❤️‍🔥 𝖩𝗈𝗂𝗇 𝗇𝗈𝗐 ❤️‍🔥", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("❤️‍🔥 𝗃𝗈𝗂𝗇 𝗇𝗈𝗐 ❤️‍🔥", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -119,13 +119,13 @@ async def help_cd(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<b>𝗌𝗈𝗆𝖾𝗍𝗁𝗂𝗇𝗀 𝗐𝖾𝗇𝗍 𝗐𝗋𝗈𝗇𝗀.𝗉𝗅𝖾𝖺𝗌𝖾<a href='https://t.me/maddastbot'>𝖼𝗅𝗂𝖼𝗁 𝗁𝖾𝗋𝖾 𝖿𝗈𝗋 𝗌𝗎𝗉𝗉𝗈𝗋𝗍</a></b>",
+                text="<b>sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ᴘʟᴇᴀsᴇ <a href='https://t.me/maddastbot'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ sᴜᴘᴘᴏʀᴛ</a></b>",
                 
                 disable_web_page_preview=True)
             return
     await StreamBot.send_photo(
     chat_id=m.chat.id,
-    photo="https://graph.org/file/102d82ebf94ca6fd67dc0.jpg",
+    photo="https://telegra.ph/file/d813fe75a3ac675ef34b7.jpg",
     caption=f"<b>𝖶𝖾 𝖽𝗈𝗇𝗍 𝗇𝖾𝖾𝖽 𝗆𝖺𝗇𝗒 <a href='https://t.me/vdmoviez'>𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌</a> 𝗍𝗈 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 🤩.\n\n𝗃𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 <a href='https://t.me/vdmoviez'>𝗏𝗂𝖽𝖾𝗈 𝖿𝗂𝗅𝖾𝗌</a> 𝖺𝗇𝖽 𝗂 𝗐𝗂𝗅𝗅 𝗀𝗂𝗏𝖾 𝗒𝗈𝗎 <a href='https://t.me/vdmoviez'>𝖽𝗂𝗋𝖾𝖼𝗍 𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 & 𝗌𝗍𝗋𝖾𝖺𝗆𝖺𝖻𝗅𝖾</a> 𝗅𝗂𝗇𝗄.\n\n𝗈𝗋 𝗎 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗆𝖾 𝗂𝗇 <a href='https://t.me/vdmoviez'>𝗒𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅</a>..𝗃𝗎𝗌𝗍 𝖺𝖽𝖽 𝗆𝖾 𝖺𝗇𝖽 𝗆𝖺𝗄𝖾 𝖻𝗈𝗍..𝖺𝗇𝖽 𝗃𝗎𝗌𝗍 𝗌𝖾𝖾 𝗆𝖾 𝗆𝖺𝗀𝗂𝖼 😎</b>",
     reply_markup=InlineKeyboardMarkup(
         [
@@ -138,13 +138,61 @@ async def help_cd(b, m):
 
             ],
             [
-                InlineKeyboardButton("🐬 𝗁𝗈𝗆𝖾 🐬", callback_data="start"),
+                InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
 
             ]
 
         ]
     )
 )
+@StreamBot.on_message(filters.command('ban') & filters.user(Var.OWNER_ID))
+async def do_ban(bot ,  message):
+    userid = message.text.split(" ", 2)[1] if len(message.text.split(" ", 1)) > 1 else None
+    reason = message.text.split(" ", 2)[2] if len(message.text.split(" ", 2)) > 2 else None
+    if not userid:
+        return await message.reply('<b>ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀ ᴠᴀʟɪᴅ ᴜsᴇʀ/ᴄʜᴀɴɴᴇʟ ɪᴅ ᴡɪᴛʜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ\n\nᴇx : /ban (user/channel_id) (banning reason[Optional]) \nʀᴇᴀʟ ᴇx : <code>/ban 1234567899</code>\nᴡɪᴛʜ ʀᴇᴀsᴏɴ ᴇx:<code>/ban 1234567899 seding adult links to bot</code>\nᴛᴏ ʙᴀɴ ᴀ ᴄʜᴀɴɴᴇʟ :\n<code>/ban CHANEL_ID</code>\nᴇx : <code>/ban -1001234567899</code></b>')
+    text = await message.reply("<b>ʟᴇᴛ ᴍᴇ ᴄʜᴇᴄᴋ 👀</b>")
+    banSts = await db.ban_user(userid)
+    if banSts == True:
+        await text.edit(
+    text=f"<b><code>{userid}</code> ʜᴀs ʙᴇᴇɴ ʙᴀɴɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ\n\nSʜᴏᴜʟᴅ I sᴇɴᴅ ᴀɴ ᴀʟᴇʀᴛ ᴛᴏ ᴛʜᴇ ʙᴀɴɴᴇᴅ ᴜsᴇʀ?</b>",
+    reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("ʏᴇs ✅", callback_data=f"sendAlert_{userid}_{reason if reason else 'no reason provided'}"),
+                InlineKeyboardButton("ɴᴏ ❌", callback_data=f"noAlert_{userid}"),
+            ],
+        ]
+    ),
+)
+    else:
+        await text.edit(f"<b>Cᴏɴᴛʀᴏʟʟ ʏᴏᴜʀ ᴀɴɢᴇʀ ʙʀᴏ...\n<code>{userid}</code> ɪs ᴀʟʀᴇᴀᴅʏ ʙᴀɴɴᴇᴅ !!</b>")
+    return
+
+
+@StreamBot.on_message(filters.command('unban') & filters.user(Var.OWNER_ID))
+async def do_unban(bot ,  message):
+    userid = message.text.split(" ", 2)[1] if len(message.text.split(" ", 1)) > 1 else None
+    if not userid:
+        return await message.reply('ɢɪᴠᴇ ᴍᴇ ᴀɴ ɪᴅ\nᴇx : <code>/unban 1234567899<code>')
+    text = await message.reply("<b>ʟᴇᴛ ᴍᴇ ᴄʜᴇᴄᴋ 🥱</b>")
+    unban_chk = await db.is_unbanned(userid)
+    if  unban_chk == True:
+        await text.edit(text=f'<b><code>{userid}</code> ɪs ᴜɴʙᴀɴɴᴇᴅ\nSʜᴏᴜʟᴅ I sᴇɴᴅ ᴛʜᴇ ʜᴀᴘᴘʏ ɴᴇᴡs ᴀʟᴇʀᴛ ᴛᴏ ᴛʜᴇ ᴜɴʙᴀɴɴᴇᴅ ᴜsᴇʀ?</b>',
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("ʏᴇs ✅", callback_data=f"sendUnbanAlert_{userid}"),
+                InlineKeyboardButton("ɴᴏ ❌", callback_data=f"NoUnbanAlert_{userid}"),
+            ],
+        ]
+    ),
+)
+
+    elif unban_chk==False:
+        await text.edit('<b>ᴜsᴇʀ ɪs ɴᴏᴛ ʙᴀɴɴᴇᴅ ʏᴇᴛ.</b>')
+    else :
+        await text.edit(f"<b>ғᴀɪʟᴇᴅ ᴛᴏ ᴜɴʙᴀɴ ᴜsᴇʀ/ᴄʜᴀɴɴᴇʟ.\nʀᴇᴀsᴏɴ : {unban_chk}</b>")
 
 
 
@@ -160,7 +208,7 @@ async def cb_handler(client, query):
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
                 [
-            [InlineKeyboardButton("❤️‍🔥 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 ❤️‍🔥", url=bisal_channel)],
+            [InlineKeyboardButton("⚡ 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 ⚡", url=bisal_channel)],
             [
                  InlineKeyboardButton("𝖺𝖻𝗈𝗎𝗍 🧩", callback_data="about"),
                  InlineKeyboardButton("𝗁𝖾𝗅𝗉 ✨", callback_data="help")
@@ -178,7 +226,7 @@ async def cb_handler(client, query):
     
     elif data == "about":
         await query.message.edit_caption(
-            caption=f"<b>Mʏ ɴᴀᴍᴇ :<a href='https://t.me/Drnboss_bot'>{bot_name}</a>\nAᴅᴍɪɴ : <a href='https://t.me/venom_darshu'>ದರ್ಶು❤️‍🩹</a>\nʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ\nᴅᴀᴛᴀʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\nʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3</b>",
+            caption=f"<b>𝖭𝖺𝗆𝗌𝗄𝖺𝗋𝖺 𝗀𝗎𝗋𝗎...😍 <a href='https://t.me/vdmoviez'>{bot_name}</a>\nAᴅᴍɪɴ : <a href='https://t.me/biisal_bot'>Bɪɪsᴀʟ</a>\nʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ\nᴅᴀᴛᴀʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\nʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3</b>",
             reply_markup=InlineKeyboardMarkup(
                 [[ 
                      InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
@@ -188,8 +236,8 @@ async def cb_handler(client, query):
         )
     elif data == "help":
         await query.message.edit_caption(
-        caption=f"<b>𝖶𝖾 𝖽𝗈𝗇𝗍 𝗇𝖾𝖾𝖽 𝗆𝖺𝗇𝗒 <a href='https://t.me/vdmoviez'>𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌</a> 𝗍𝗈 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 🤩.\n\n𝗃𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 <a href='https://t.me/vdmoviez'>𝗏𝗂𝖽𝖾𝗈 𝖿𝗂𝗅𝖾𝗌</a> 𝖺𝗇𝖽 𝗂 𝗐𝗂𝗅𝗅 𝗀𝗂𝗏𝖾 𝗒𝗈𝗎 <a href='https://t.me/vdmoviez'>𝖽𝗂𝗋𝖾𝖼𝗍 𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 & 𝗌𝗍𝗋𝖾𝖺𝗆𝖺𝖻𝗅𝖾</a> 𝗅𝗂𝗇𝗄.\n\n𝗈𝗋 𝗎 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗆𝖾 𝗂𝗇 <a href='https://t.me/vdmoviez'>𝗒𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅</a>..𝗃𝗎𝗌𝗍 𝖺𝖽𝖽 𝗆𝖾 𝖺𝗇𝖽 𝗆𝖺𝗄𝖾 𝖻𝗈𝗍..𝖺𝗇𝖽 𝗃𝗎𝗌𝗍 𝗌𝖾𝖾 𝗆𝖾 𝗆𝖺𝗀𝗂𝖼 😎</b>",
-            reply_markup=InlineKeyboardMarkup(
+        caption=f"<b>𝖶𝖾 𝖽𝗈𝗇𝗍 𝗇𝖾𝖾𝖽 𝗆𝖺𝗇𝗒 <a href='https://t.me/vdmoviez'>𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌</a> 𝗍𝗈 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 🤩.\n\n𝗃𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 <a href='https://t.me/vdmoviez'>𝗏𝗂𝖽𝖾𝗈 𝖿𝗂𝗅𝖾𝗌</a> 𝖺𝗇𝖽 𝗂 𝗐𝗂𝗅𝗅 𝗀𝗂𝗏𝖾 𝗒𝗈𝗎 <a href='https://t.me/vdmoviez'>𝗂𝗋𝖾𝖼𝗍 𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 & 𝗌𝗍𝗋𝖾𝖺𝗆𝖺𝖻𝗅𝖾</a> 𝗅𝗂𝗇𝗄.\n\n𝗈𝗋 𝗎 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗆𝖾 𝗂𝗇 <a href='https://t.me/vdmoviez'>𝗒𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅</a>..𝗃𝗎𝗌𝗍 𝖺𝖽𝖽 𝗆𝖾 𝖺𝗇𝖽 𝗆𝖺𝗄𝖾 𝖻𝗈𝗍..𝖺𝗇𝖽 𝗃𝗎𝗌𝗍 𝗌𝖾𝖾 𝗆𝖾 𝗆𝖺𝗀𝗂𝖼 😎</b>",
+    reply_markup=InlineKeyboardMarkup(
 [[ 
                      InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
                      InlineKeyboardButton("𝖼𝗅𝗈𝗌𝖾 ‼️", callback_data="close_data")
@@ -198,7 +246,7 @@ async def cb_handler(client, query):
     elif data == "aboutDev":
         # please don't steal credit
         await query.message.edit_caption(
-            caption=f"<b>𝖭𝖺𝗆𝗌𝗄𝖺𝗋𝖺 𝗀𝗎𝗋𝗎...😍\n𝗂𝗆 <a href='https://t.me/vdmoviez'>𝖣𝖠𝖲✨</a>\n𝗂 𝖺𝗆 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇 𝗈𝖿 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍..𝖺𝗇𝖽 𝗂 𝗆𝖺𝖽𝖾 𝖻𝗈𝗍 𝖻𝗒 𝗍𝗁𝖾 𝗁𝖾𝗅𝗉 𝗈𝖿 <a href='https://t.me/vdmoviez'>𝘯𝘰𝘣𝘰𝘥𝘺</a> 𝖻𝗋𝗈..\n\n𝖦𝗂𝗍𝗁𝗎𝖻 : <a href='https://t.me/venom_darshu'>𝗏𝖾𝗇𝗈𝗆$😈</a></b>",
+            caption=f"<b>𝖭𝖺𝗆𝗌𝗄𝖺𝗋𝖺 𝗀𝗎𝗋𝗎...😍\n𝗂𝗆 <a href='https://t.me/vdmoviez'>𝖣𝖠𝖲✨</a>\n𝗂 𝖺𝗆 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇 𝗈𝖿 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍..𝖺𝗇𝖽 𝗂 𝗆𝖺𝖽𝖾 𝖻𝗈𝗍 𝖻𝗒 𝗍𝗁𝖾 𝗁𝖾𝗅𝗉 𝗈𝖿 <a href='https://t.me/vdmoviez'>𝘯𝘰𝘣𝘰𝘥𝘺</a> 𝖻𝗋𝗈..\n\n𝖦𝗂𝗍𝗁𝗎𝖻 : <a href='https://t.me/vdmoviez'>𝗏𝖾𝗇𝗈𝗆$😈</a></b>",
             reply_markup=InlineKeyboardMarkup(
                 [[ 
                      InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
