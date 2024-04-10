@@ -21,15 +21,15 @@ MY_PASS = os.environ.get("MY_PASS", None)
 pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
-msg_text ="""<b>‣ ʏᴏᴜʀ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ! 😎
+msg_text ="""<b>‣ 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖽 ! 😎
 
-‣ Fɪʟᴇ ɴᴀᴍᴇ : <i>{}</i>
-‣ Fɪʟᴇ ꜱɪᴢᴇ : {}
+○ 𝖥𝗂𝗅𝖾 𝗇𝖺𝗆𝖾 : <i>{}</i>
+○ 𝖥𝗂𝗅𝖾 𝗌𝗂𝗓𝖾 : {}
 
 🔻 <a href="{}">𝗙𝗔𝗦𝗧 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗</a>
 🔺 <a href="{}">𝗪𝗔𝗧𝗖𝗛 𝗢𝗡𝗟𝗜𝗡𝗘</a>
 
-‣ ɢᴇᴛ <a href="https://t.me/vdmoviez">ᴍᴏʀᴇ ғɪʟᴇs</a></b> 🤡"""
+○ 𝖦𝖾𝗍 <a href="https://t.me/vdmoviez">𝗆𝗈𝗋𝖾 𝖿𝗂𝗅𝖾𝗌</a></b> 🤡"""
 
 
 
@@ -47,7 +47,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="You are banned!\n\n  **Cᴏɴᴛᴀᴄᴛ Support [Support](https://t.me/maddas_bot) They Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                    text="You are banned!\n\n  **Cᴏɴᴛᴀᴄᴛ Support [Support](https://t.me/maddastbot) They Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     
                     disable_web_page_preview=True
                 )
@@ -56,11 +56,11 @@ async def private_receive_handler(c: Client, m: Message):
             await c.send_photo(
                 chat_id=m.chat.id,
                 photo="https://graph.org/file/65bb471efec7fef886a13.jpg",
-                caption=""""<b>Hᴇʏ ᴛʜᴇʀᴇ!\n\nPʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ ! 😊\n\nDᴜᴇ ᴛᴏ sᴇʀᴠᴇʀ ᴏᴠᴇʀʟᴏᴀᴅ, ᴏɴʟʏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜɪs ʙᴏᴛ !</b>""",
+                caption=""""<b>𝖧𝖾𝗒 𝗍𝗁𝖾𝗋𝖾!\n\n𝗉𝗅𝖾𝖺𝗌𝖾 𝗃𝗈𝗂𝗇 𝗈𝗎𝗋 𝗎𝗉𝖽𝖺𝗍𝖾𝗌 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾 ! 😊\n\n𝖣𝗎𝖾 𝗍𝗈 𝗌𝖾𝗋𝗏𝖾𝗋 𝗈𝗏𝖾𝗋𝗅𝗈𝖺𝖽, 𝗈𝗇𝗅𝗒 𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾𝗋𝗌 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 !</b>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🚩", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("𝗃𝗈𝗂𝗇 𝗇𝗈𝗐 🚩", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -85,8 +85,8 @@ async def private_receive_handler(c: Client, m: Message):
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("sᴛʀᴇᴀᴍ 🔺", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ 🔻', url=online_link)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝗌𝗍𝗋𝖾𝖺𝗆 🤍", url=stream_link), #Stream Link
+                                                InlineKeyboardButton('𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 🤍', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -114,8 +114,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("sᴛʀᴇᴀᴍ 🔺", url=stream_link),
-                    InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ 🔻', url=online_link)] 
+                    [InlineKeyboardButton("𝗌𝗍𝗋𝖾𝖺𝗆 🤍", url=stream_link),
+                    InlineKeyboardButton('𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 🤍', url=online_link)] 
                 ]
             )
         )
