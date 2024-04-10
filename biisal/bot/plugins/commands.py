@@ -202,6 +202,4 @@ async def cb_handler(client, query):
             reply_markup=InlineKeyboardMarkup(
                 [[ 
                      InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
-                     InlineKeyboardButton("𝖻𝖺𝖽𝖺𝗌𝗌✪", user_id=int(5658395021)
-                  ]]            )
-        )
+                     InlineKeyboardButton("𝖻𝖺𝖽𝖺𝗌𝗌✪", user_id=int(5658395021))
