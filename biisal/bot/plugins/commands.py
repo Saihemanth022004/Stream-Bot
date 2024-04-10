@@ -226,7 +226,7 @@ async def cb_handler(client, query):
     
     elif data == "about":
         await query.message.edit_caption(
-            caption=f"<b>𝖭𝖺𝗆𝗌𝗄𝖺𝗋𝖺 𝗀𝗎𝗋𝗎...😍 <a href='https://t.me/vdmoviez'>{bot_name}</a>\nAᴅᴍɪɴ : <a href='https://t.me/biisal_bot'>Bɪɪsᴀʟ</a>\nʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ\nᴅᴀᴛᴀʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\nʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3</b>",
+            caption=f"<b>𝖬𝗒 𝗇𝖺𝗆𝖾..😍 <a href='https://t.me/vdmoviez'>{bot_name}</a>\n𝖠𝖽𝗆𝗂𝗇 : <a href='https://t.me/maddastbot'>ꀷꍏꌚ</a>\n𝖧𝗈𝗌𝗍𝖾𝖽 𝗈𝗇 : 𝖧𝖾𝗋𝗈𝗄𝗎\n𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 : 𝗆𝗈𝗇𝗀𝗈𝖽𝖻\n𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝗉𝗒𝗍𝗁𝗈𝗇 3</b>",
             reply_markup=InlineKeyboardMarkup(
                 [[ 
                      InlineKeyboardButton("𝗁𝗈𝗆𝖾", callback_data="start"),
