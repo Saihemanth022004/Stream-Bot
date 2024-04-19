@@ -18,8 +18,8 @@ class Var(object):
     name = str(getenv('name', 'Drnboss_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '3'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001586622410'))
-    NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1001586622410'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002074112864'))
+    NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1002074112864'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
