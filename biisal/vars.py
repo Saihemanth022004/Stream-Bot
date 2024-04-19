@@ -12,9 +12,9 @@ bisal_grp = "https://t.me/vdsamr"
 
 class Var(object):
     MULTI_CLIENT = True
-    API_ID = int(getenv('API_ID', '20738979'))
-    API_HASH = str(getenv('API_HASH', 'a6d015153068a35390a336fe0a38dd64'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , '6683650338:AAEkBqC01ihqCSwpqO_8ZvHsB7QEGzB6fig'))
+    API_ID = int(getenv('API_ID', '27895608'))
+    API_HASH = str(getenv('API_HASH', 'b7d28d25cbd340a2bf998834871f71f4'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '7159995184:AAGUCxhmmSKv020bToqFuG-L85GH0HLFIRc'))
     name = str(getenv('name', 'Drnboss_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '3'))
@@ -23,7 +23,7 @@ class Var(object):
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5658395021").split())  
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1276209862").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
     OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'venom_darshu'))
